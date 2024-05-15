@@ -1,0 +1,10 @@
+name: Build
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello Step
+        run: echo "Foo bar"

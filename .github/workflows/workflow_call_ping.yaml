@@ -1,0 +1,11 @@
+name: Workflow A (Ping)
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  ping:
+    uses: USER_OR_ORG_NAME/REPO_NAME/.github/workflows/workflow_call_pong.yaml@master
+    with:
+      ping: 'PONG'
